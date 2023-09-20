@@ -1,0 +1,259 @@
+body {
+    background-color: black;
+}
+
+.font {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: white;
+    font-size: 22px;
+    margin-top: 50px;
+    margin-left: 10px;
+    animation: font 3s infinite linear alternate;
+}
+
+@keyframes font {
+    from {
+        transform: scale(0.9);
+        color: white;
+    }
+
+    to {
+        transform: scale(1);
+        color: yellowgreen;
+    }
+}
+
+.parent {
+    width: 700px;
+    height: 700px;
+    /* border: 1px red solid; */
+    margin: auto;
+    margin-top: 180px;
+    position: relative;
+}
+
+.orbit {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 1px white solid;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    top: 211px;
+    box-shadow: 0px 0px 1px yellow;
+    position: relative;
+}
+
+.orbit:nth-child(2) {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 55px;
+    left: 50px;
+    animation: rto 22s linear infinite;
+}
+
+.orbit:nth-child(2) .planet {
+    background-color: wheat;
+    top: 432px;
+    left: 23px;
+    box-shadow: 0px 0px 25px wheat;
+}
+
+
+@keyframes rto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.orbit:nth-child(3) {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 105px;
+    left: 96px;
+    animation: rto2 18s linear infinite;
+}
+
+.orbit:nth-child(3) .planet {
+    background-color: rgb(197, 245, 179);
+    top: 478px;
+    left: 234px;
+    box-shadow: 0px 0px 25px rgb(197, 245, 179);
+}
+
+
+@keyframes rto2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.orbit:nth-child(4) {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 154px;
+    left: 144px;
+    animation: rto4 13s linear infinite;
+}
+
+.orbit:nth-child(4) .planet {
+    background-color: rgb(73, 211, 224);
+    top: 302px;
+    left: 339px;
+    box-shadow: 0px 0px 25px rgb(73, 211, 224);
+}
+
+@keyframes rto4 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.orbit:nth-child(5) {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 201px;
+    left: 192px;
+    animation: rto5 6s linear infinite;
+}
+
+.orbit:nth-child(5) .planet {
+    background-color: greenyellow;
+    top: 94px;
+    left: 274px;
+    box-shadow: 0px 0px 25px greenyellow;
+}
+
+@keyframes rto5 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.orbit:nth-child(6) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 249px;
+    left: 241px;
+    animation: rto6 3s linear infinite;
+}
+
+.orbit:nth-child(6) .planet {
+    background-color: rgb(244, 150, 50);
+    top: 138px;
+    left: 0px;
+    box-shadow: 0px 0px 25px rgb(244, 150, 50);
+}
+
+@keyframes rto6 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sun {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    top: -422px;
+    left: 271px;
+    animation: sun infinite linear;
+    box-shadow: 0px 0px 25px yellow;
+
+}
+
+.orbit2 {
+    width: 58px;
+    height: 58px;
+    /* border: 1px white solid; */
+    border-radius: 50%;
+    position: relative;
+    animation: moon 2s linear infinite;
+    left: -9px;
+    top: -10px;
+}
+
+.moon {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(213, 213, 202);
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    box-shadow: 0px 0px 25px rgb(213, 213, 202);
+}
+
+@keyframes moon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ring {
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 2px wheat solid; */
+    top: -6px;
+    left: -26px;
+    box-shadow: 0px 0px 10px rgb(213, 213, 202) inset;
+}
